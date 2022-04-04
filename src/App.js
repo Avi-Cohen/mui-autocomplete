@@ -42,8 +42,6 @@ function App() {
   };
 
   const onCustomerSearchChange = async (emailToFind) => {
-    console.log(emailToFind);
-    console.log(autoCompleteOptions);
     setSelectValue(
       autoCompleteOptions.find(({ email }) => email === emailToFind)
     );
